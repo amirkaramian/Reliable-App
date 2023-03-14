@@ -1,0 +1,11 @@
+{
+  "MiddlewareSettings": {
+    "EnableHttpsLogging": false,
+    "EnableLocalization": true,
+    "ModuleManageFileNameWithPath": "configurations/module-management.json",
+    "ModuleExcludedForMiddlewareValidation": "identity,appmodule,usermodule", // comma separated array
+    "APIKeysValidation": false,
+    "AdminOrigin": "https://admin.myreliablesite.m2mbeta.com",
+    "ClientOrigin": "https://client.myreliablesite.m2mbeta.com"
+  }
+}

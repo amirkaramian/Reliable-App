@@ -1,0 +1,8 @@
+{
+  "CorsSettings": {
+    "Angular": "http://localhost:4200",
+    "Blazor": "https://localhost:5002",
+    "EnableAnyOriginCors": true,
+    "Test":  true
+  }
+}

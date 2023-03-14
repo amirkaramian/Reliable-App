@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7",
+    "DateFormat": "MM/dd/yyyy hh:mm t",
+    "DefaultCountry": "CAD",
+    "TermsOfServiceURL": "Terms",
+    "TermsOfServiceAgreement": true,
+    "RecordsToDisplay": 10,
+    "AutoRefreshInterval": 5,
+    "Tenant": "admin",
+    "LogRotation": true,
+    "LogRotationDays": "30",
+    "RequestsIntervalPerIPAfterLimitAdminInSeconds": 60,
+    "EnableAPIAccessAdmin": true,
+    "EnableAPIAccessClient": true,
+    "RequestsPerIPAdmin": 50,
+    "RequestsPerIPClient": 50,
+    "LoginRequestsPerIPAdmin": 50,
+    "LoginRequestsPerIPClient": 50,
+    "RequestsIntervalPerIPAfterLimitClientInSeconds": 60
+
+  },
+  {
+    "Id": "97FB3ED8-B9F3-4C36-84BB-F37281874B2A",
+    "DateFormat": "MM/dd/yyyy hh:mm t",
+    "DefaultCountry": "CAD",
+    "TermsOfServiceURL": "Terms",
+    "TermsOfServiceAgreement": true,
+    "RecordsToDisplay": 10,
+    "AutoRefreshInterval": 5,
+    "Tenant": "client",
+    "LogRotation": true,
+    "LogRotationDays": "30",
+    "RequestsIntervalPerIPAfterLimitAdminInSeconds": 60,
+    "EnableAPIAccessAdmin": true,
+    "EnableAPIAccessClient": true,
+    "RequestsPerIPAdmin": 50,
+    "RequestsPerIPClient": 50,
+    "LoginRequestsPerIPAdmin": 50,
+    "LoginRequestsPerIPClient": 50,
+    "RequestsIntervalPerIPAfterLimitClientInSeconds": 60
+
+  }
+]

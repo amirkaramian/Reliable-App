@@ -1,0 +1,810 @@
+[
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Tenants",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Categories",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true,
+      "Patch": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Settings",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true,
+      "Patch": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Articles",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Roles",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Identity",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Brands",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Articles",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "CronJobs",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Stats",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "EmailTemplates",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "TemplateVariables",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Hooks",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "AuditLogs",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Identity",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "MFAuthenticator",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "RoleCalims",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Roles",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Users",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Admin",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "ModuleManagement",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "ManageUserApiKey",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Tenants",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Notifications",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "NotificationTemplates",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "Settings",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "SmtpConfigurations",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "ManageSubUserApiKey",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Admin",
+    "HasChanges": true,
+    "Name": "SubUsers",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Identity",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Users",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Settings",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Products",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Credits",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Invoices",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Notifications",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Tickets",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "SubUsers",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "CreditManagement",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "BillingSettings",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "AuditLogs",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Orders",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "ManageUserApiKey",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Articles",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "Client",
+    "HasChanges": true,
+    "Name": "Bills",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Identity",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Settings",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Products",
+    "IsActive": true,
+    "Permissions": {
+      "View": true,
+      "Search": true,
+      "Update": true,
+      "Remove": true,
+      "Register": true,
+      "Create": true
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Credits",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Invoices",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Notifications",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Tickets",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "CreditManagement",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "BillingSettings",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "AuditLogs",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Orders",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "ManageUserApiKey",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Articles",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  },
+  {
+    "Tenant": "SubUser",
+    "HasChanges": true,
+    "Name": "Bills",
+    "IsActive": true,
+    "Permissions": {
+      "View": false,
+      "Search": false,
+      "Update": false,
+      "Remove": false,
+      "Register": false,
+      "Create": false
+    }
+  }
+]

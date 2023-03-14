@@ -1,0 +1,91 @@
+{
+  "ClientRateLimiting": {
+    "EnableEndpointRateLimiting": true,
+    "ClientIdHeader": "X-ClientId",
+    "HttpStatusCode": 429,
+    "EndpointWhitelist": [ "*:/api/values", "delete:/api/clients", "get:/" ],
+    "ClientWhitelist": [ "cl-key-a", "cl-key-b" ],
+    "GeneralRules": [
+      {
+        "Endpoint": "*",
+        "Period": "1s",
+        "Limit": 2
+      },
+      {
+        "Endpoint": "*",
+        "Period": "1m",
+        "Limit": 50
+      },
+      {
+        "Endpoint": "post:/api/clients",
+        "Period": "5m",
+        "Limit": 3
+      },
+      {
+        "Endpoint": "get:/api/user/get-info",
+        "Period": "1m",
+        "Limit": 3,
+        "QuotaExceededResponse": {
+          "Content": "{{ \"name\": \"\" , \"error\": \"Get user information api interface  quota exceeded. Maximum allowed: {0} per {1}. Please try again in {2} second(s).\" }}",
+          "ContentType": "application/json"
+        }
+      }
+    ]
+  },
+
+  "ClientRateLimitPolicies": {
+    "ClientRules": [
+      {
+        "ClientId": "gen-api-key", //cl-key-1",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "get:/api/clients",
+            "Period": "1m",
+            "Limit": 2
+          },
+          {
+            "Endpoint": "put:/api/clients",
+            "Period": "5m",
+            "Limit": 2
+          }
+        ]
+      },
+      {
+        "ClientId": "cl-key-2",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "get:/api/clients",
+            "Period": "1m",
+            "Limit": 0
+          },
+          {
+            "Endpoint": "post:/api/clients",
+            "Period": "5m",
+            "Limit": 50
+          }
+        ]
+      },
+      {
+        "ClientId": "user-api-key",
+        "Rules": [
+          {
+            "Endpoint": "post:/api/clients",
+            "Period": "1s",
+            "Limit": 3
+          }
+        ]
+      }
+    ]
+  }
+
+}

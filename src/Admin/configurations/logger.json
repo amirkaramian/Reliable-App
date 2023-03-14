@@ -1,0 +1,68 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Hangfire": "Warning",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "Serilog": {
+    "Using": [],
+    "Enrich": [
+      "FromLogContext",
+      "WithMachineName",
+      "WithProcessId",
+      "WithThreadId",
+      "WithHangfireContext"
+    ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Hangfire": "Warning",
+        "Microsoft": "Error",
+        "Microsoft.Hosting.Lifetime": "Information",
+        "System": "Information"
+      }
+    },
+    "Properties": {
+      "Application": "MyReliableSite"
+    },
+    "WriteTo": [
+      {
+        "Args": {
+          "path": "Logs/logs.json",
+          "formatter": "Serilog.Formatting.Json.JsonFormatter, Serilog",
+          "rollingInterval": "Day",
+          "restrictedToMinimumLevel": "Information",
+          "retainedFileCountLimit": 100, //Deletes at maximum count of 100 file
+          "fileSizeLimitBytes": "52428800", //Deletes at a limit of 50MB per file
+          "retainedFileTimeLimit": "30.00:00:00" //Deletes files older than 30 days
+
+        },
+        "Name": "File"
+      },
+      {
+        "Name": "Seq",
+        "Args": {
+          "serverUrl": "http://localhost:5341"
+        }
+      },
+      {
+        "Name": "Hangfire"
+      },
+      {
+        "Name": "MSSqlServer",
+        "Args": {
+          "ConnectionString": "Data Source=207.244.242.187;Initial Catalog=MyReliableSiteDB;Integrated Security=false;User ID=MyRSLogin;Password=00Qb4JjS3Aik;MultipleActiveResultSets=True",
+          "sinkOptionsSection": {
+            "tableName": "Logs",
+            "schemaName": "EventLogging",
+            "autoCreateSqlTable": true
+          },
+          "restrictedToMinimumLevel": "Warning"
+        }
+      }
+    ]
+  }
+}

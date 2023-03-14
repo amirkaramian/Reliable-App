@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>MyReliableSite.Infrastructure</RootNamespace>
+        <AssemblyName>MyReliableSite.Infrastructure</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AspNetCoreRateLimit" Version="4.0.2" />
+        <PackageReference Include="AspNetCoreRateLimit.Redis" Version="1.0.1" />
+        <PackageReference Include="Dapper" Version="2.0.123" />
+        <PackageReference Include="Hangfire" Version="1.7.29" />
+        <PackageReference Include="Hangfire.Console" Version="1.4.2" />
+        <PackageReference Include="Hangfire.Console.Extensions" Version="1.0.5" />
+        <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
+        <PackageReference Include="Hangfire.PostgreSql" Version="1.9.7" />
+        <PackageReference Include="MailKit" Version="3.2.0" />
+        <PackageReference Include="MaintenanceModeMiddleware" Version="1.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="6.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="6.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.5" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.5" />
+        <PackageReference Include="MimeKit" Version="3.2.0" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.4" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+        <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+        <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+        <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.2.3" />
+        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Core\Application\Application.csproj" />
+        <ProjectReference Include="..\Core\Domain\Domain.csproj" />
+        <ProjectReference Include="..\Shared\Shared.DTOs\Shared.DTOs.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Seeders\*.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Seeders\moduleSeed.json" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Seeders\moduleSeed.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Roslynator.Analyzers" Version="4.1.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="KnowledgeBase\" />
+      <Folder Include="MaintenanceMode\" />
+    </ItemGroup>
+</Project>

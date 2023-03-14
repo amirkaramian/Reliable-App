@@ -1,0 +1,21 @@
+{
+  "JwtSettings": {
+    "key": "S0M3RAN0MS3CR3T!1!MAG1C!1!",
+    "tokenExpirationInMinutes": 20,
+    "refreshTokenExpirationInDays": 7
+  },
+  "ApiKeys": {
+    "gen-api-key": "S0M3RAN0MS3CR3T",
+    "admin-api-key-safeList": "127.0.0.1;192.168.1.5;::1",
+    "admin-api-key": "S0M3Admin",
+    "admin-user-id-forAuditLogs": "42F025C6-006D-471E-92C9-BC218D60A063",
+    "admin-api-key-roles": "accountant,admin",
+    "user-api-key-roles": "accountant,admin",
+    "admin-api-key-roles-delimiter": ",",
+    "user-api-key-roles-delimiter": ",",
+    "user-api-key-userid-delimiter": ","
+  },
+  "GoogleSettings": {
+    "RecaptchaSecretKey": "6LdNnN0eAAAAAJD6-FuCHUZVlgDvrAUJLJF4qES9"
+  }
+}

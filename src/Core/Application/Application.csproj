@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>MyReliableSite.Application</RootNamespace>
+        <AssemblyName>MyReliableSite.Application</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.0.2" />
+        <PackageReference Include="IronPython" Version="3.4.0" />
+        <PackageReference Include="Mapster" Version="7.3.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="6.0.7" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.5" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />
+        <ProjectReference Include="..\..\Shared\Shared.DTOs\Shared.DTOs.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Roslynator.Analyzers" Version="4.1.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Categories\EventHandlers\" />
+      <Folder Include="Identity\Services\" />
+      <Folder Include="Reports\Validators\" />
+    </ItemGroup>
+</Project>

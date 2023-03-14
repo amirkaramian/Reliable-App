@@ -1,0 +1,6 @@
+{
+  "DatabaseSettings": {
+    "DBProvider": "mssql",
+    "ConnectionString": "Data Source=207.244.242.187;Initial Catalog=MyReliableSiteDB;Integrated Security=false;User ID=MyRSLogin;Password=00Qb4JjS3Aik;MultipleActiveResultSets=True"    
+  }
+}

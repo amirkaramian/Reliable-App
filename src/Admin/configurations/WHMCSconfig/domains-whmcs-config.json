@@ -1,0 +1,73 @@
+{
+  "rowSeperator": "\n",
+  "columnSeperator": ",",
+  "HasHeaderRow": true,
+  "HasTitleRow": true,
+  "columns": {
+    "1": {
+      "name": "ID",
+      "isRequired": true,
+      "isUnique": true
+    },
+    "2": {
+      "name": "UserID",
+      "isRequired": true
+    },
+    "3": {
+      "name": "ClientName",
+      "isRequired": true
+    },
+    "4": {
+      "name": "OrderID",
+      "isRequired": true
+    },
+    "5": {
+      "name": "RegType",
+      "isRequired": true
+    },
+    "6": {
+      "name": "DomainName",
+      "isRequired": true
+    },
+    "7": {
+      "name": "FirstPayment",
+      "isRequired": true
+    },
+    "8": {
+      "name": "RecurringAmount",
+      "isRequired": true
+    },
+    "9": {
+      "name": "RegistrationPeriod",
+      "isRequired": true
+    },
+    "10": {
+      "name": "RegistrationDate",
+      "isRequired": true
+    },
+    "11": {
+      "name": "ExpiryDate",
+      "isRequired": true
+    },
+    "12": {
+      "name": "NextDueDate",
+      "isRequired": true
+    },
+    "13": {
+      "name": "Register",
+      "isRequired": true
+    },
+    "14": {
+      "name": "PaymentMethod",
+      "isRequired": true
+    },
+    "15": {
+      "name": "Status",
+      "isRequired": true
+    },
+    "16": {
+      "name": "Notes",
+      "isRequired": false
+    }
+  }
+}

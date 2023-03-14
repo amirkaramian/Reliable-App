@@ -1,0 +1,72 @@
+{
+  "ModuleManagementSettings": {
+    "ModuleManagements": [
+      {
+        "Tenant": "Biling",
+        "Modules": [
+          {
+            "Name": "Tenants",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "ViewAll": true,
+              "Update": true,
+              "Remove": true
+            }
+          },
+          {
+            "Name": "Settings",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "Search": true,
+              "Update": true,
+              "Remove": true
+            }
+          },
+          {
+            "Name": "Articles",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "Search": true,
+              "Update": true,
+              "Remove": true
+            }
+          },
+          {
+            "Name": "Roles",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "Search": true,
+              "Update": true,
+              "Remove": true
+            }
+          },
+          {
+            "Name": "Identity",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "Search": true,
+              "Update": true,
+              "Remove": true
+            }
+          },
+          {
+            "Name": "Tokens",
+            "IsActive": true,
+            "Permissions": {
+              "View": true,
+              "Search": true,
+              "Update": true,
+              "Remove": true,
+              "Create": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

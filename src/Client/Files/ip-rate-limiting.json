@@ -1,0 +1,122 @@
+{
+  "IpRateLimiting": {
+    "EnableEndpointRateLimiting": false,
+    "StackBlockedRequests": false,
+    "RealIpHeader": "X-Real-IP",
+    "HttpStatusCode": 429,
+    "IpWhitelist": [ "::1/10", "192.168.0.0/24", "207.244.242.187", "127.0.0.1" ],
+    "EndpointWhitelist": [ "delete:/api/values", "*:/api/clients", "*:/api/ClientRateLimit", "*:/api/IpRateLimit", "get:/" ],
+    "ClientWhitelist": [ "cl-key-1", "cl-key-2" ],
+    "QuotaExceededResponse": {
+      "Content": "{{ \"message\": \"Whoa! Calm down, cowboy!\", \"details\": \"Quota exceeded. Maximum allowed: {0} per {1}. Please try again in {2} second(s).\" }}",
+      "ContentType": "application/json"
+    },
+    "GeneralRules": [
+      {
+        "Endpoint": "*",
+        "Period": "1s",
+        "Limit": 15
+      },
+      {
+        "Endpoint": "*",
+        "Period": "1m",
+        "Limit": 250
+      },
+      {
+        "Endpoint": "get:/api/user/get-all",
+        "Period": "1m",
+        "Limit": 6,
+        "QuotaExceededResponse": {
+          "Content": "{{ \"data\": [], \"error\": \"Get all user api interface  quota exceeded. Maximum allowed: {0} per {1}. Please try again in {2} second(s).\" }}",
+          "ContentType": "application/json"
+        }
+      }
+    ]
+  },
+
+  "IpRateLimitPolicies": {
+    "IpRules": [
+      {
+        "Ip": "84.247.85.224",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 2
+          },
+          {
+            "Endpoint": "post:/api/values",
+            "Period": "1m",
+            "Limit": 5
+          }
+        ]
+      },
+      {
+        "Ip": "84.247.85.225",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 5
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1h",
+            "Limit": 2
+          }
+        ]
+      },
+      {
+        "Ip": "84.247.85.226",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1s",
+            "Limit": 10
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 5
+          },
+          {
+            "Endpoint": "*",
+            "Period": "1d",
+            "Limit": 2
+          }
+        ]
+      },
+      {
+        "Ip": "84.247.85.231",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 0
+          }
+        ]
+      },
+      {
+        "Ip": "84.247.85.232",
+        "Rules": [
+          {
+            "Endpoint": "*",
+            "Period": "1m",
+            "Limit": 1,
+            "MonitorMode": true
+          }
+        ]
+      }
+    ]
+  }
+}

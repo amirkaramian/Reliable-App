@@ -1,0 +1,19 @@
+{
+  "JwtSettings": {
+    "key": "S0M3RAN0MS3CR3T!1!MAG1C!1!",
+    "tokenExpirationInMinutes": 20,
+    "refreshTokenExpirationInDays": 7
+  },
+  "ApiKeys": {
+    "gen-api-key": "S0M3RAN0MS3CR3T",
+    "gen-api-key-safeList": "127.0.0.1;192.168.1.5;::1",
+    "gen-api-key-roles": "client",
+    "gen-api-key-roles-delimiter": ",",
+    "user-api-key-roles-delimiter": ",",
+    "user-api-key-userid-delimiter": ",",
+    "user-api-key-roles": "accountant,admin"
+  },
+  "GoogleSettings": {
+    "RecaptchaSecretKey": "6LdNnN0eAAAAAJD6-FuCHUZVlgDvrAUJLJF4qES9"
+  }
+}

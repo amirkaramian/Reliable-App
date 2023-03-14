@@ -1,0 +1,81 @@
+{
+  "rowSeperator": "\n",
+  "columnSeperator": ",",
+  "HasHeaderRow": true,
+  "HasTitleRow": true,
+  "columns": {
+    "1": {
+      "name": "ID",
+      "isRequired": true,
+      "isUnique": true
+    },
+    "2": {
+      "name": "FirstName",
+      "isRequired": true
+    },
+    "3": {
+      "name": "LastName",
+      "isRequired": true
+    },
+    "4": {
+      "name": "CompanyName",
+      "isRequired": false
+    },
+    "5": {
+      "name": "Email",
+      "isRequired": true
+    },
+    "6": {
+      "name": "Address1",
+      "isRequired": false
+    },
+    "7": {
+      "name": "Address2",
+      "isRequired": false
+    },
+    "8": {
+      "name": "City",
+      "isRequired": true
+    },
+    "9": {
+      "name": "State",
+      "isRequired": true
+    },
+    "10": {
+      "name": "Postcode",
+      "isRequired": true
+    },
+    "11": {
+      "name": "Country",
+      "isRequired": true
+    },
+    "12": {
+      "name": "PhoneNumber",
+      "isRequired": false
+    },
+    "13": {
+      "name": "Currency",
+      "isRequired": true
+    },
+    "14": {
+      "name": "ClientGroupID",
+      "isRequired": false
+    },
+    "15": {
+      "name": "Credit",
+      "isRequired": false
+    },
+    "16": {
+      "name": "CreationDate",
+      "isRequired": false
+    },
+    "17": {
+      "name": "Notes",
+      "isRequired": false
+    },
+    "18": {
+      "name": "Status",
+      "isRequired": true
+    }
+  }
+}

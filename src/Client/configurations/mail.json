@@ -1,0 +1,11 @@
+{
+  "MailSettings": {
+    "DisplayName": "my reliable site",
+    "EnableVerification": true,
+    "From": "admin@myreliablesite.m2mbeta.com",
+    "Host": "smtp.mailtrap.io",
+    "Password": "5773a9450ae847",
+    "Port": 25,
+    "UserName": "ad4fe65e2e017c"
+  }
+}
